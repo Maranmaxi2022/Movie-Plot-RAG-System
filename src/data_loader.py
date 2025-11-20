@@ -92,29 +92,3 @@ class DataLoader:
         print(f"Loaded {len(df)} movie plots")
 
         return df
-
-    def get_sample_data(self) -> pd.DataFrame:
-        """
-        Get a small sample of data for testing.
-
-        Returns:
-            DataFrame with sample movie plots
-        """
-        # Create sample data for testing without downloading
-        sample_data = {
-            'Title': [
-                '2001: A Space Odyssey',
-                'The Matrix',
-                'Inception',
-                'The Godfather',
-                'Pulp Fiction'
-            ],
-            'Plot': [
-                'A mysterious black monolith appears on Earth and in space. Dr. Dave Bowman and other astronauts are sent on a mysterious mission to Jupiter. The HAL 9000 computer becomes antagonistic and kills most of the crew. Bowman disconnects HAL and travels beyond Jupiter where he encounters another monolith and undergoes a transformation.',
-                'Thomas Anderson is a computer programmer who leads a double life as a hacker named Neo. He discovers that reality is actually a simulation called the Matrix, created by sentient machines. Neo joins a rebellion led by Morpheus and Trinity to free humanity from the Matrix.',
-                'Dom Cobb is a skilled thief who steals secrets from people\'s subconscious during their dreams. He is offered a chance at redemption by performing inception - planting an idea in someone\'s mind. The team must navigate multiple dream levels while facing dangers from Cobb\'s past.',
-                'The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son Michael. Michael transforms from a war hero who wants nothing to do with the family business into a ruthless mafia boss.',
-                'The lives of two mob hitmen, a boxer, a gangster and his wife intertwine in four tales of violence and redemption. The non-linear narrative follows various criminals in Los Angeles as their stories intersect in unexpected ways.'
-            ]
-        }
-        return pd.DataFrame(sample_data)

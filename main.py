@@ -29,9 +29,6 @@ Examples:
   # Single query mode
   python main.py --query "What movies feature artificial intelligence?"
 
-  # Use sample data (no download)
-  python main.py --sample --query "Tell me about space movies"
-
   # Use OpenAI instead of Anthropic
   python main.py --provider openai --query "What movies involve dreams?"
 
@@ -41,11 +38,6 @@ Examples:
     )
 
     # Data options
-    parser.add_argument(
-        "--sample",
-        action="store_true",
-        help="Use sample data instead of downloading dataset"
-    )
     parser.add_argument(
         "--dataset-path",
         type=str,
@@ -135,10 +127,7 @@ def initialize_rag_system(args):
     print("\n[1/5] Loading movie plot data...")
     data_loader = DataLoader(max_rows=args.max_rows)
 
-    if args.sample:
-        print("Using sample data...")
-        df = data_loader.get_sample_data()
-    elif args.dataset_path:
+    if args.dataset_path:
         print(f"Loading from: {args.dataset_path}")
         df = data_loader.load_data(args.dataset_path)
     else:
