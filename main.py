@@ -29,8 +29,8 @@ Examples:
   # Single query mode
   python main.py --query "What movies feature artificial intelligence?"
 
-  # Use OpenAI instead of Anthropic
-  python main.py --provider openai --query "What movies involve dreams?"
+  # Use custom model
+  python main.py --model gpt-4 --query "What movies involve dreams?"
 
   # Custom configuration
   python main.py --chunk-size 400 --top-k 5 --max-rows 300
@@ -66,16 +66,9 @@ Examples:
 
     # LLM options
     parser.add_argument(
-        "--provider",
-        type=str,
-        choices=["anthropic", "openai"],
-        default="anthropic",
-        help="LLM provider to use (default: anthropic)"
-    )
-    parser.add_argument(
         "--model",
         type=str,
-        help="Specific model to use (optional)"
+        help="Specific OpenAI model to use (default: gpt-4o-mini)"
     )
 
     # Query options
@@ -148,19 +141,15 @@ def initialize_rag_system(args):
     print(f"✓ Vector store ready")
 
     # Step 4: Initialize LLM
-    print(f"\n[4/5] Initializing LLM ({args.provider})...")
+    print(f"\n[4/5] Initializing LLM (OpenAI)...")
     try:
-        llm_client = get_llm_client(
-            provider=args.provider,
-            model=args.model
-        )
+        llm_client = get_llm_client(model=args.model)
         print(f"✓ LLM client ready")
     except Exception as e:
         print(f"\n❌ Error initializing LLM: {e}")
-        print("\nMake sure you have set up your API keys:")
-        print("  - For Anthropic: export ANTHROPIC_API_KEY=your_key")
-        print("  - For OpenAI: export OPENAI_API_KEY=your_key")
-        print("\nOr create a .env file with your API keys")
+        print("\nMake sure you have set up your OpenAI API key:")
+        print("  - export OPENAI_API_KEY=your_key")
+        print("\nOr create a .env file with your API key")
         sys.exit(1)
 
     # Step 5: Create RAG pipeline

@@ -10,5 +10,5 @@ This system demonstrates a complete RAG pipeline that:
 - Creates semantic embeddings using Sentence Transformers
 - Stores vectors in FAISS for fast similarity search
 - Retrieves top-k most relevant chunks for queries
-- Generates natural language answers using LLMs (Claude or GPT)
+- Generates natural language answers using OpenAI GPT models
 - Returns structured JSON output with answer, contexts, and reasoning
