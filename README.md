@@ -19,7 +19,7 @@ The system operates in two main phases:
 
 ### Initialization Phase
 
-![Initialization Phase](res/03.png)
+![Initialization Phase](res/01.png)
 
 The initialization phase prepares the RAG pipeline:
 
@@ -32,7 +32,7 @@ Once complete, the RAG pipeline is ready to handle queries.
 
 ### Query Phase
 
-![Query Phase](res/04.png)
+![Query Phase](res/02.png)
 
 The query phase handles user questions:
 
