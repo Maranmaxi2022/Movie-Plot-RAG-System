@@ -1,0 +1,9 @@
+{
+  "answer": "1. I cannot provide the current president of Sri Lanka based on the given movie plot contexts.\n2. None of the movies mentioned (Disraeli, The Arab, The Lotus Eater) contain information relevant to answering this question.\n3. Therefore, I am unable to answer your question.",
+  "contexts": [
+    "Disraeli: As described in a film magazine,[3] Disraeli (Arliss), a middle class Jew, has become the British Prime Minister under Queen Victoria and incurs the enmity of nobles and racist snobs. He knows that Ru...",
+    "The Arab: Jamil (Ramon Novarro) is a soldier in the Bedouin defense forces during a war between Syria and Turkey, who has deserted his regiment. In a remote village, he encounters an orphan asylum run by Americ...",
+    "The Lotus Eater: As described in a film magazine,[3] raised aboard a ship, Jacques Leroi (Barrymore) has never seen a woman until after the death of his father, a man who had been disappointed in love. As the only hei..."
+  ],
+  "reasoning": "Retrieved 3 relevant plot chunks from 3 movie(s): The Lotus Eater, The Arab, Disraeli. Used these contexts to generate the answer with the LLM."
+}
