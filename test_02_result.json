@@ -1,9 +1,0 @@
-{
-  "answer": "I cannot provide an answer to your question about the current president of Sri Lanka, as the movie contexts provided do not contain relevant information about political figures or current events. They focus on fictional plots from \"The Godfather,\" \"The Matrix,\" and \"Pulp Fiction.\"",
-  "contexts": [
-    "The Godfather: The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son Michael. Michael transforms from a war hero who wants nothing to do with the family b...",
-    "The Matrix: Thomas Anderson is a computer programmer who leads a double life as a hacker named Neo. He discovers that reality is actually a simulation called the Matrix, created by sentient machines. Neo joins a ...",
-    "Pulp Fiction: The lives of two mob hitmen, a boxer, a gangster and his wife intertwine in four tales of violence and redemption. The non-linear narrative follows various criminals in Los Angeles as their stories in..."
-  ],
-  "reasoning": "Retrieved 3 relevant plot chunks from 3 movie(s): Pulp Fiction, The Godfather, The Matrix. Used these contexts to generate the answer with the LLM."
-}

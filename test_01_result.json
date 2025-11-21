@@ -1,9 +1,0 @@
-{
-  "answer": "The movies with crime storylines are \"Pulp Fiction\" and \"The Godfather.\" \"Pulp Fiction\" revolves around various criminals in Los Angeles involved in violence and redemption, while \"The Godfather\" focuses on organized crime and the transfer of power within a crime dynasty. \n\nThese references are based on Context 1 for \"Pulp Fiction\" and Context 2 for \"The Godfather.\" The context provided for \"Inception\" does not indicate a traditional crime storyline, so it is not included.",
-  "contexts": [
-    "Pulp Fiction: The lives of two mob hitmen, a boxer, a gangster and his wife intertwine in four tales of violence and redemption. The non-linear narrative follows various criminals in Los Angeles as their stories in...",
-    "The Godfather: The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son Michael. Michael transforms from a war hero who wants nothing to do with the family b...",
-    "Inception: Dom Cobb is a skilled thief who steals secrets from people's subconscious during their dreams. He is offered a chance at redemption by performing inception - planting an idea in someone's mind. The te..."
-  ],
-  "reasoning": "Retrieved 3 relevant plot chunks from 3 movie(s): The Godfather, Pulp Fiction, Inception. Used these contexts to generate the answer with the LLM."
-}
